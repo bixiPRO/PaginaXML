@@ -1,0 +1,328 @@
+/* Donar espai el html per poder posar el header i oculta el desplaçament vertical si hi ha */
+html{
+    padding: 70px 0px;  
+    margin: 0;
+    display: block;
+    overflow-x: hidden;
+}
+/* Posisionar bé el logo */
+.logo_mvm {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 10px;
+}
+
+.logo_alumno {
+    position: absolute;
+    top: 17px;
+    left: 2350px ;
+    width: 150px;
+}
+
+.nom_insti {
+    position: absolute;
+    color: #380035;
+    font-size: 20px;
+    width: 150px;
+    left: 270px;
+    top: 9px;
+}
+
+.Inici {
+    position: absolute;
+    left: 1060px;
+    top: 0px;
+    width: 70px;
+}
+
+/* Posar un image/GIF el fons del body */
+body {
+    background-image: url("Multimedia/video.gif");
+    text-align: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+/* Posar text en el mig i el color */
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+/* Posar text en el mig i amb doble borde una sota l'altra*/
+#titulo {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: double;
+    width: 150px;
+    left: 430px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}   
+
+h3 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+
+.sobre_fondo {
+    position:absolute;
+    height:100%;
+    width:200px;
+    top: 40px;
+    left : 40px;
+    z-index: 1;
+}
+
+.cuerpo {
+    top: 100px;
+    background-color: #2146ab96;
+    width: 1000px;
+    height: 1070px;
+    position: absolute;
+    left: 730px;
+}
+/*Introducció estil per el formulari*/
+#formulari {
+    list-style-type: none;
+}
+h4 {
+    position: absolute;
+    color: rgba(210, 180, 140, 0);
+}
+label {
+    font-size: 17px;
+}
+input {
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 7px;
+}
+textarea {
+    background-color: rgba(195, 197, 199, 0.514);
+    width: 150px;
+    border-color: black;
+    border-radius: 10px;
+    margin: 7px;
+    padding: 5px;
+}
+#input_nom {
+    left: 33px;
+}
+
+#input_correo {
+    left: -10px;
+}
+
+#input_msg {
+    position: relative;
+    left: 11px;
+}
+#Nom {
+    position: relative;
+    left: 30px;
+    color: #fff;
+}
+#Correu_lista{
+    position: relative;
+    left: -10px;
+    color: #fff;
+}
+#label_msg {
+    position: relative;
+    top: -25px;
+    left: 12px;
+    color: #fff;
+}
+#titol_formulari {
+    position: absolute;
+    top: 130px;
+    left: 100px;
+}
+form {
+    position: relative;
+    padding: 20px;
+    background-color: rgb(49, 0, 0);
+    width: 500px;
+    left: 230px;
+    border-width: 50px;
+    border-color: #000000;
+    border-radius: 30px;
+    top: 100px;
+}
+/* Donar estil per el botó de enviar del formulari*/
+button {
+    position: absolute;
+    border: 1px solid #000000;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 50px;
+    left: 450px;
+}
+/* Donar estil per el botó de enviar del formulari si pasa el cursor*/
+button:hover{
+    color: rgb(0, 0, 0);
+    background-color: #120061;
+    border: 2px dotted red;
+    color: #fff;
+}
+/* Modificaciones para poner el header del bixiang */
+/* Estil del header */
+#header {
+    margin-top: -80px;
+    background: linear-gradient(to left, #5a3636, #756956, #96967f, #434443, #303d4b, #473d4d);
+    padding:0px;
+    text-align: left; 
+    position: fixed; 
+    width: 100%; 
+    transition: background 0.3s ease-in-out; 
+    color: #fff; 
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+#sobre_mi, #treball, #contacte {
+    display: flex;
+    align-items: center; 
+    color:#ffffff;
+}
+
+#treball {
+    margin-right: 10px;
+    
+}
+#sobre_mi{
+    margin-right: 10px;
+}
+
+#contacte {
+    background-color: #13193a;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out; 
+    margin-right: 20px;
+}
+
+#contacte:hover {
+    background-color: #8a8367; 
+}
+
+#logo {
+    display: inline-flex;
+    margin: 0px;
+    width: 170px; 
+    height: 96px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#logo{
+    background-image: url("Multimedia/logo.png");
+}
+
+a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#sobre_mi:hover, #treball:hover, #contacte:hover {
+    text-decoration: underline;
+    color:blue;
+}
+/* Posar la resolució del cos a 1920x1080 */
+@media screen and (max-width: 1920px) {
+    .cuerpo {
+        top: 100px;
+        background-color: rgba(48, 69, 138, 0.726);
+        width: 1000px;
+        height: 940px;
+        position: absolute;
+        left: 350px;
+    }
+  }
+/* Estil del fotter, imatges, estil de text, mapa*/
+#fotter {
+    position: absolute;
+    background-color:#000000;
+    width: 1900px;
+    height: 250px;
+    top: 1000px;
+
+}
+#fotter:h2 {
+    color: #fff;
+    position: absolute;
+    top: 90px;
+}
+#texto_fotter {
+    position: relative;
+    top: 80px;
+    color: whitesmoke;
+}
+#mapa {
+    position: absolute;
+    left: 1360px;
+    height: 520px;
+    bottom: 200px;
+    width: 520px;
+    border-radius: 12px;
+}
+#texto_copyright {
+    color: whitesmoke;
+    left: 865px;
+    top: 150px;
+}
+#carrer_fotter {
+    color: aliceblue;
+    position: relative;
+    top: 75px;
+}
+#foto_mvm_fotter {
+    position: absolute;
+    left: 1400px;
+    top: 30px;
+    width: 150px;
+    height: -10px;
+    border-radius: 5px;
+}
+#generalitat_fotter {
+    position: absolute;
+    left: 1400px;
+    top: 120px;
+    width: 350px;
+    border-radius: 2px;
+}
+#ministerio_fotter {
+    position: absolute;
+    left: 1397px;
+    top: 180px;
+    width: 250px;
+    border-radius: 2px;
+}
+#correos_fotter {
+    text-align: justify;
+    position: absolute;
+    color: #fff;
+    left: 30px;
+    padding: 5px;
+}
+#correos_fotter_text {
+    position: absolute;
+    color: #fff;
+    top: -35px;
+}

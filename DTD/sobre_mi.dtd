@@ -1,0 +1,17 @@
+<!ELEMENT sobre_mi (header, titul_pagina, todo_ruben, todo_pol, todo_bixi)>
+<!ELEMENT header (logo, enlace+, titul_pagina)>
+<!ELEMENT logo EMPTY>
+<!ATTLIST logo id ID #REQUIRED href CDATA #IMPLIED>
+<!ELEMENT enlace (#PCDATA)>
+<!ATTLIST enlace id ID #REQUIRED href CDATA #IMPLIED>
+<!ELEMENT titul_pagina (#PCDATA)>
+<!ELEMENT todo_ruben (imagen, persona, curriculum)>
+<!ELEMENT imagen EMPTY>
+<!ATTLIST imagen id ID #REQUIRED>
+<!ELEMENT persona (titol, text)>
+<!ELEMENT titol (#PCDATA)>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT curriculum (#PCDATA)>
+<!ATTLIST curriculum id ID #REQUIRED href CDATA #IMPLIED>
+<!ELEMENT todo_pol (imagen, persona, curriculum)>
+<!ELEMENT todo_bixi (imagen, persona, curriculum)>

@@ -1,0 +1,52 @@
+<!ELEMENT trabajos (header, titulo, subtitol, asignatura+)>
+<!ELEMENT header (logo, enlace+, enlace)>
+<!ELEMENT logo EMPTY>
+<!ATTLIST logo
+    id ID #REQUIRED
+    href CDATA #IMPLIED
+>
+<!ELEMENT enlace (#PCDATA | a)*>
+<!ATTLIST enlace
+    id ID #REQUIRED
+    href CDATA #IMPLIED
+>
+<!ELEMENT a (#PCDATA)>
+<!ATTLIST a
+    href CDATA #IMPLIED
+>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT subtitol (#PCDATA)>
+<!ELEMENT asignatura (tituloassignatura_fm | tituloassignatura_pr | tituloassignatura_iso | tituloassignatura_ofi | tituloassignatura_gbd | tituloassignatura_fol, imagen, (contingut_fm | contingut_programacio | contingut_iso | contingut_ofi | contingut_gdb | contingut_fol))>
+<!ELEMENT tituloassignatura_fm (#PCDATA)>
+<!ELEMENT tituloassignatura_pr (#PCDATA)>
+<!ELEMENT tituloassignatura_iso (#PCDATA)>
+<!ELEMENT tituloassignatura_ofi (#PCDATA)>
+<!ELEMENT tituloassignatura_gbd (#PCDATA)>
+<!ELEMENT tituloassignatura_fol (#PCDATA)>
+<!ELEMENT imagen EMPTY>
+<!ATTLIST imagen
+    id ID #REQUIRED
+>
+<!ELEMENT contingut_fm (informacio_fm, parrafo)>
+<!ELEMENT informacio_fm (#PCDATA)>
+<!ELEMENT parrafo (#PCDATA)>
+<!ELEMENT contingut_programacio (informacio_pr, parrafo)>
+<!ELEMENT informacio_pr (#PCDATA)>
+<!ELEMENT contingut_iso (informacio_iso, parrafo)>
+<!ELEMENT informacio_iso (#PCDATA)>
+<!ELEMENT contingut_ofi (informacio_ofi, parrafo)>
+<!ELEMENT informacio_ofi (#PCDATA)>
+<!ELEMENT contingut_gdb (informacio_gbd, parrafo)>
+<!ELEMENT informacio_gbd (#PCDATA)>
+<!ELEMENT contingut_fol (informacio_fol, parrafo)>
+<!ELEMENT informacio_fol (#PCDATA)>
+<!ELEMENT footer (h4+, imagen, correos)>
+<!ELEMENT h4 (#PCDATA)>
+<!ATTLIST h4 id ID #REQUIRED>
+<!ELEMENT correos (correos_fotter)>
+<!ELEMENT correos_fotter (correos_fotter_text, correo+, correo?)>
+<!ELEMENT correos_fotter_text (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ATTLIST correo id ID #REQUIRED>
+<!ELEMENT imagen EMPTY>
+<!ATTLIST imagen id ID #REQUIRED>

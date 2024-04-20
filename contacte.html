@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contacte</title>
+    <link rel="stylesheet" type="text/css" href="contacte.css"/>
+</head>
+<body>
+    <div id="header">
+      <a id="logo" href="home.html"></a>
+      <a id="sobre_mi" href="sobre_mi.xml">About us</a>
+      <a id="treball" href="trabajos.xml">Work</a>
+      <a id="contacte" href="contacte.html">Contact us</a>
+    </div>
+    <!--Posar el google maps-->
+    <iframe id = "mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11966.887268896728!2d2.2286565!3d41.423557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a355e0fe9851%3A0x28d72ff627b25f0d!2sIES%20Manuel%20V%C3%A1zquez%20Montalb%C3%A1n!5e0!3m2!1sca!2ses!4v1705880710347!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="cuerpo">
+      <h1 id="titulo">Contacte</h1>
+      <h3>Aquesta és una pagina de contacte per una activitat en grup de LMSGI esperem que us agradi.</h3>
+      <h4>istereg</h4>
+      <h2 id="titol_formulari">Si vols contactarnos deixa les teves dades en aquest formulari:</h2>
+      <form action="formulario.txt" method="post" id="formulari">
+        <label id="Nom">Nom:</label>
+        <input type="text" id="input_nom" name="user_name" />
+        </br>
+        <label id="Correu_lista">Correu Electronic:</label>
+        <input type="email" id="input_correo" name="user_mail" />
+        </br>
+        <label id="label_msg" for="input_msg">Missatje:</label>
+        <textarea id="input_msg" name="Missatge"></textarea>
+        </br>
+        <button class="enviador" type="submit" formaction="guardar_informacion.txt">Enviar</button>
+      </br>
+      </form>
+    </div>
+    <footer id="fotter">
+      <h4 id="texto_fotter">Created by "Bixiang Zhu, Ruben Gamiz and Pol Cruz"</h2>
+      <h4 id="carrer_fotter">Av. d'Eduard Marsistany, 59, 08930 Sant Adrià de Besòs, Barcelona</h3>
+      <h4 id="texto_copyright">Copyright© 2023-2024</h4>
+      <img id="foto_mvm_fotter" src="Multimedia/logo-mvm.jpeg">
+      <img id="generalitat_fotter" src="Multimedia/generalitat.jpg">
+      <img id="ministerio_fotter" src="Multimedia/ministerio.png">
+      <ul id="correos_fotter">  
+      <h4 id="correos_fotter_text">Correus de contacte:</h4>
+        <li>Pol Cruz Fisica: 'pcruz@institutmvm.cat'</li>
+        <li>Ruben Gamiz Porcel: 'rgamiz@institutmvm.cat'</li>
+        <li>Bixiang Zhu: 'bzhu@institutmvm.cat'</li>
+      </ul>
+    </footer>
+</body>
+</html> 

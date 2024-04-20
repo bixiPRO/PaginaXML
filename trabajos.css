@@ -1,0 +1,540 @@
+/* Espai de la pagina i eliminar desplaçament horitzontal si es més gran que el contingut */
+body {
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+#container {
+    border-left: 20px solid #001f3f;
+    border-right: 20px solid #001f3f;
+}
+/* Posar la imatge en el mig de tot, que no es repeteixi, posar en el centre de tot i donar espai pel header*/
+trabajos {
+    background: url("Multimedia/fondo2trabajo.jpg") center center fixed no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'serif';
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 80px 0px;
+    margin: 0;
+    display: block;
+}
+/* Estil pel header */
+header {
+    margin-top: -80px;
+    background: linear-gradient(to left, #5a3636, #756956, #96967f, #434443, #303d4b, #473d4d);
+    padding:0px;
+    text-align: left; 
+    position: fixed; 
+    width: 100%; 
+    color: #fff; 
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+#sobre_mi, #treball, #contacte {
+    display: flex;
+    align-items: center; 
+}
+#treball {
+    margin-right: 10px;
+    
+}
+#sobre_mi{
+    margin-right: 10px;
+}
+
+#contacte {
+    background-color: #13193a;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out; 
+    margin-right: 20px;
+}
+
+#contacte:hover {
+    background-color: #8a8367; 
+}
+
+logo {
+    display: inline-flex;
+    margin: 0px;
+    width: 170px; 
+    height: 96px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#logo{
+    background-image: url("Multimedia/logo.png");
+}
+
+enlace {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+enlace:hover {
+    text-decoration: underline;
+    color:blue;
+}
+
+titulo {
+    display: block;
+    width: 260%;
+    font-size: 75px;
+    font-weight: bold;
+    font-family: 'Bickham Script Pro';
+    color: #ffffff;
+    padding: 25px;
+}
+
+imagen {
+    display: inline-block;
+    width: 375px;
+    height: 375px;
+}
+
+/*FM*/
+/*Aquest estil de FM he fet lo mateix per les altres assignatures*/
+/*Estil del titol*/
+tituloassignatura_fm {
+    font-size: 54px;
+    font-family: 'Helvetica Now';
+    text-decoration: underline;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    left: 225px;
+    width: -50px;
+    height: 55px;
+    top: 250px;
+    position: absolute;
+    color: #fff;
+}
+/*Posar imatge amb bordre rodons i el bordre marcat en negre*/
+#fm_imagen {
+    background-image: url("Multimedia/fm (1).jpg");
+    background-size: cover;
+    position: absolute;
+    left: 4%;
+    width: 20%;
+    height: 250px;
+    top: 310px;
+    background-position: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 10px solid #000000;
+    border-radius: 10%
+}
+/*Posar espai per posar el text, que quedi resaltat el bordre amb el seu propi estil i estil de text normal*/
+contingut_fm {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    left: 25%;
+    top: 310px;
+    width: 70%;
+    height: 250px;
+    padding: 20px;
+    position: absolute;
+    border: solid 5px #000000;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #80c2ff;
+    color: #000000;
+    border-radius: 10%; 
+}
+
+/*Estil informació practica*/
+informacio_fm {
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    font-weight: bold;
+}
+
+/*Programacio*/
+tituloassignatura_pr {
+    font-size: 50px;
+    font-family: 'Helvetica Now';
+    text-decoration: underline;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    left:   120px;
+    width: -50px;
+    height: 55px;
+    top: 580px;
+    position: absolute;
+    color: #fff;
+}
+
+#programacio_imagen {
+    background-image: url("Multimedia/Python.jpg");
+    background-size: cover;
+    position: absolute;
+    left: 6%;
+    width: 15%;
+    height: 250px;
+    top: 640px;
+    background-position: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 10px solid #000000;
+    border-radius: 10%
+}
+
+contingut_programacio {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    left: 25%;
+    top: 640px;
+    width: 70%;
+    height: 250px;
+    padding: 20px;
+    position: absolute;
+    border: solid 5px #000000;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #80c2ff;
+    color: #000;
+    border-radius: 10%; 
+}
+
+informacio_pr {
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    font-weight: bold;
+}
+/*ISO*/
+tituloassignatura_iso {
+    font-size: 54px;
+    font-family: 'Helvetica Now';
+    text-decoration: underline;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    left: 225px;
+    width: -50px;
+    height: 55px;
+    top: 910px;
+    position: absolute;
+    color: #fff;
+}
+
+#iso_imagen {
+    background-image: url("Multimedia/iso.jpg");
+    background-size: cover;
+    position: absolute;
+    left: 4%;
+    width: 20%;
+    height: 250px;
+    top: 970px;
+    background-position: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 10px solid #000000;
+    border-radius: 10%;
+}
+
+contingut_iso {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    left: 25%;
+    top: 970px;
+    width: 70%;
+    height: 250px;
+    padding: 20px;
+    position: absolute;
+    border: solid 5px #000000;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #80c2ff;
+    color: #000;
+    border-radius: 10%; 
+}
+
+informacio_iso {
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    font-weight: bold;
+}
+/*OFI*/
+tituloassignatura_ofi {
+    font-size: 54px;
+    font-family: 'Helvetica Now';
+    text-decoration: underline;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    left: 225px;
+    width: -50px;
+    height: 55px;
+    top: 1240px;
+    position: absolute;
+    color: #fff;
+}
+
+#ofi_imagen {
+    background-image: url("Multimedia/ofi.jpg");
+    background-size: cover;
+    position: absolute;
+    left: 4%;
+    width: 20%;
+    height: 250px;
+    top: 1300px;
+    background-position: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 10px solid #000000;
+    border-radius: 10%
+}
+
+contingut_ofi {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    left: 25%;
+    top: 1300px;
+    width: 70%;
+    height: 250px;
+    padding: 20px;
+    position: absolute;
+    border: solid 5px #000000;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #80c2ff;
+    color: #000;
+    border-radius: 10%; 
+}
+
+informacio_ofi {
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    font-weight: bold;
+}
+/*GBD*/
+tituloassignatura_gbd {
+    font-size: 54px;
+    font-family: 'Helvetica Now';
+    text-decoration: underline;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    left: 225px;
+    width: -50px;
+    height: 55px;
+    top: 1570px;
+    position: absolute;
+    color: #fff;
+}
+
+#gbd_imagen {
+    background-image: url("Multimedia/gbd.jpg");
+    background-size: cover;
+    position: absolute;
+    left: 4%;
+    width: 20%;
+    height: 250px;
+    top: 1630px;
+    background-position: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 10px solid #000000;
+    border-radius: 10%
+}
+
+contingut_gdb {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    left: 25%;
+    top: 1630px;
+    width: 70%;
+    height: 250px;
+    padding: 20px;
+    position: absolute;
+    border: solid 5px #000000;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #80c2ff;
+    color: #000;
+    border-radius: 10%; 
+
+}
+
+informacio_gbd {
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    font-weight: bold;
+}
+/*FOL*/
+tituloassignatura_fol {
+    font-size: 54px;
+    font-family: 'Helvetica Now';
+    text-decoration: underline;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    left: 225px;
+    width: -50px;
+    height: 55px;
+    top: 1900px;
+    position: absolute;
+    color: #fff;
+}
+
+#fol_imagen {
+    background-image: url("Multimedia/fol.jpg");
+    background-size: cover;
+    position: absolute;
+    left: 4%;
+    width: 20%;
+    height: 250px;
+    top: 1960px;
+    background-position: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 10px solid #000000;
+    border-radius: 10%;
+}
+
+contingut_fol {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    left: 25%;
+    top: 1960px;
+    width: 70%;
+    height: 250px;
+    padding: 20px;
+    position: absolute;
+    border: solid 5px #000000;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #80c2ff;
+    color: #000;
+    border-radius: 10%; 
+
+}
+
+informacio_fol {
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    font-weight: bold;
+}
+
+/*Fotter*/
+#fotter {
+    position: absolute;
+    background-color: #000000;
+    width: 1900px;
+    height: 250px;  
+    top: 2300px;
+    left:1px;
+}
+/*Estil de text*/
+#texto_fotter {
+    position: absolute;
+    top: 80px;
+    left: 790px;
+    color: #fff;
+}
+
+#carrer_fotter {
+    color: aliceblue;
+    position: absolute;
+    top: 110px;
+    left: 740px; 
+}
+
+#texto_copyright {
+    color: whitesmoke;
+    position: absolute;
+    top: 140px;
+    left: 890px;
+}
+/*Estil logo del fotter i que no es repeteixi el logo*/
+#logo_fotter{
+    position: absolute;
+    background-image: url(Multimedia/logosfotter.png);
+    height: 240px;
+    width: 450px;   
+    right:50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#correos_fotter {
+    text-align: justify;
+    position: absolute;
+    color: #fff;
+    left: 70px;
+    top:100px;
+    padding: 5px;
+}
+
+correos_fotter_text {
+    position: absolute;
+    color: #fff;
+    top: 60px;
+    left:30px;
+
+}
+#polc{
+    position: absolute;
+    color: #fff;
+    top: 90px;
+    left:15px;
+}
+#rubc{
+    position: absolute;
+    color: #fff;
+    top: 120px;
+    left:15px;
+}
+#bixc{
+    position: absolute;
+    color: #fff;
+    top: 150px;
+    left:15px;
+}

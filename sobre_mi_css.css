@@ -1,0 +1,293 @@
+/* Estil de la pagina, colors, espai pel header, i treure el desplaçament horitzontal si hi ha*/
+sobre_mi {
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: block;
+    background: linear-gradient(#5a3636, #756956, #96967f, #434443, #303d4b, #473d4d);
+    padding: 80px 0px; 
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* Estil text */
+persona {
+    margin-bottom: 20px; 
+    padding: 10px; 
+    background-color: rgba(243, 248, 228, 0.8); 
+    border-radius: 8px;  
+    width: 900px; 
+    height: 300px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+/* Estil pel header */
+header {
+    margin-top: -80px;
+    background: linear-gradient(to left, #5a3636, #756956, #96967f, #434443, #303d4b, #473d4d);
+    padding:0px;
+    text-align: left; 
+    position: fixed; 
+    width: 100%; 
+    transition: background 0.3s ease-in-out; 
+    color: #fff; 
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+/* Posar en el mig del espai donat */
+#sobre_mi, #treball, #contacte {
+    display: flex;
+    align-items: center; 
+}
+
+#treball {
+    margin-right: 10px;
+    
+}
+#sobre_mi{
+    margin-right: 10px;
+}
+/* Posar el color del box contacte amb una transició juntant amb hover */
+#contacte {
+    background-color: #13193a;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out; 
+    margin-right: 20px;
+}
+/* Cambiar el color quan pasa el ratoli */
+#contacte:hover {
+    background-color: #8a8367; 
+}
+
+logo {
+    display: inline-flex;
+    margin: 0px;
+    width: 170px; 
+    height: 96px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+/* Posar imatge logo */
+#logo{
+    background-image: url("Multimedia/logo.png");
+}
+/* Esborrar la decoració del link amb el color blanc */
+enlace {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+/* Posar en subrallat i cambiar a color blau quan passi el ratoli */
+enlace:hover {
+    text-decoration: underline;
+    color:blue;
+}
+/* Estil del titol que posi en el mig de tot amb el contingut, negreta i color verd */
+titul_pagina {
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 52px;
+    font-weight: bold;
+    color: #00ff22;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+titol {
+    padding-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+    
+}
+/* Estil del text normal */
+text {
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 70px;
+    text-align: justify;
+    font-size: 20px; 
+    color: #666; 
+    margin: 0px;
+    width: 750px; 
+    height: 96px;
+}
+/* Estil del link */
+curriculum {
+    position: absolute;
+    padding-left: 1150px;
+    padding-top: 250px;
+    text-align: center;
+    font-size: 18px; 
+    color: #8598f0; 
+}
+curriculum:hover{
+    text-decoration: underline;
+    color:blue;
+}
+/* Posar espai per posar la imatge i text */
+todo_ruben{
+    padding-left: 200px;
+    padding-top: 130px;
+    margin-top: 80px;
+    display: inline-flex;
+    margin: 0px;
+    width: 100%; 
+    height: 100%;
+}
+todo_pol{
+    padding-left: 200px;
+    padding-top: 50px;
+    margin-top: 80px;
+    display: inline-flex;
+    margin: 0px;
+    width: 100%; 
+    height: 100%;
+}
+todo_bixi{
+    padding-left: 200px;
+    padding-top: 50px;
+    margin-top: 80px;
+    display: inline-flex;
+    margin: 0px;
+    width: 100%; 
+    height: 100%;
+}
+/* Posar espai per la imatge i si pasar el ratoli per adalt cambiar el format del punter */
+imagen {
+    display: inline-flex;
+    margin: 0px;
+    width: 300px; 
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Posar la imatge i que sigui rodo */
+#ruben_img{
+    margin:0px;
+    background-image: url("Multimedia/ruben.png");
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    flex-flow: row;
+    border-radius: 50%; 
+    width:300px;
+    height:300px;
+}
+
+#pol_img{
+    margin:0px;
+    background-image: url("Multimedia/pol.png");
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    flex-flow: row;
+    border-radius: 50%; 
+    width:300px;
+    height:300px;
+}
+
+#bixiang_img{
+    margin:0px;
+    background-image: url("Multimedia/bixi.png");
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    flex-flow: row;
+    border-radius: 50%; 
+    width:300px;
+    height:300px;
+
+}
+
+#pol, #ruben, #bixiang{
+    display: inline-flex;
+    margin: 5px;
+
+}
+
+/* Estil del fotter */
+#fotter {
+    position: absolute;
+    background-color: #000000;
+    width: 1900px;
+    height: 250px;  
+    top: 1350px;
+    left:1px;
+}
+
+#texto_fotter {
+    position: absolute;
+    top: 80px;
+    left: 790px;
+    color: #fff;
+}
+
+#carrer_fotter {
+    color: aliceblue;
+    position: absolute;
+    top: 110px;
+    left: 740px; 
+}
+
+#texto_copyright {
+    color: whitesmoke;
+    position: absolute;
+    top: 140px;
+    left: 890px;
+}
+/* Posar logo del fotter i que no pugui sortir mñes d'un cop  */
+#logo_fotter{
+    position: absolute;
+    background-image: url(Multimedia/logosfotter.png);
+    height: 240px;
+    width: 450px;   
+    right:50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#correos_fotter {
+    text-align: justify;
+    position: absolute;
+    color: #fff;
+    left: 70px;
+    top:100px;
+    padding: 5px;
+}
+
+correos_fotter_text {
+    position: absolute;
+    color: #fff;
+    top: 60px;
+    left:30px;
+
+}
+#polc{
+    position: absolute;
+    color: #fff;
+    top: 90px;
+    left:15px;
+}
+#rubc{
+    position: absolute;
+    color: #fff;
+    top: 120px;
+    left:15px;
+}
+#bixc{
+    position: absolute;
+    color: #fff;
+    top: 150px;
+    left:15px;
+}

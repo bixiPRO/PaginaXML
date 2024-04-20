@@ -1,0 +1,75 @@
+/* Estil de la pagina */
+html, body {
+    padding:0;
+    margin:0;
+    background-image: url(Multimedia/video.gif);
+    width:1080px
+}
+/* Estil del text i posar una animació*/
+h1 {
+    padding-top: 110px;
+    padding:30px;
+    margin:100px;
+    padding-left: 170px;
+    font-family: 'Minecraft', sans-serif;
+    font-size: 80px; 
+}
+div{
+    color: #ff0000;
+    font-family: serif;
+    padding:3px;
+    animation: fadeIn 2s ease-in-out;
+    z-index: 1000;
+}
+/* La animació de ser transparent a veure tot*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Aixó treu el subratllat del div */
+div a {
+    text-decoration: none; 
+}
+/* Cambi de color si pasa el ratoli */
+div:hover{
+    color:rgb(57, 255, 8); 
+}
+/* Estil de footer */
+#fotter {
+    position: absolute;
+    width: 1920px;
+    height: 150px;
+    top: 880px;
+    text-align: center;
+}
+#fotter:h2 {
+    color: #fff;
+}
+#fotter:h3 {
+    color: #fff;
+}
+#fotter:h4 {
+    color: #fff;
+}
+#texto_fotter {
+    color: whitesmoke;
+}
+#texto_copyright {
+    color: whitesmoke;
+    left: 865px;
+    top: 190px;
+}
+#carrer_fotter {
+    color: aliceblue;
+}
+.text {
+    position: absolute;
+    left: 1095px;
+    top: -60px;
+    text-align: center;
+    
+}

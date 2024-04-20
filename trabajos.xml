@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!DOCTYPE trabajos SYSTEM "trabajos.dtd">
+<?xml-stylesheet type="text/css" href="trabajos.css"?>
+
+<trabajos>
+    <header>
+        <logo id="logo" href="home.html" xmlns="http://www.w3.org/1999/xhtml"/>
+        <enlace id="sobre_mi" href="sobre_mi.xml">About us</enlace>
+        <enlace id="treball" href="trabajos.xml">Work</enlace>
+        <enlace id="contacte" href="contacte.html" xmlns="http://www.w3.org/1999/xhtml">Contact us</enlace>
+    </header>
+    <titulo>TREBALLS</titulo>
+    <asignatura>
+        <tituloassignatura_fm>FM</tituloassignatura_fm>
+        <imagen id="fm_imagen" />
+        <contingut_fm>
+            <informacio_fm>Alumne:  Bixiang Zhu  |   Curs: 1rASIX  |    Professor: Susana Barbero</informacio_fm>
+            <parrafo>
+En fonaments del maquinari, com a treball destacat, vam dur a terme una recerca sobre programari lliure per a la realització de còpies de seguretat de manera incremental i automatitzada. Aquest programa havia de ser capaç de connectar-se amb altres serveis i permetre llibertat en la selecció del contingut a recuperar, així com en el moment del dia per dur a terme la tasca. Durant aquesta tasca, vam adquirir coneixements en la identificació i anàlisi de diferents programes lliures per a la recuperació d'arxius i directoris perduts, assegurant-nos que es poguessin adaptar a les necessitats d'una empresa. També vam aprendre les diverses formes de realitzar còpies de seguretat i els serveis on es podien implementar.</parrafo>
+        </contingut_fm>
+    </asignatura>
+    <asignatura>
+        <tituloassignatura_pr>Programació</tituloassignatura_pr>
+        <imagen id="programacio_imagen" />
+        <contingut_programacio>
+            <informacio_pr>Alumne:Bixiang Zhu  |   Curs: 1rASIX  |   Professor: Albert Alonso</informacio_pr>
+            <parrafo>
+En programació bàsica, actualment estem desenvolupant un projecte final de la UF1 d'un programa que simularà el recompte de puntuació dels jugadors en un joc de rol, alhora que categoritzarà els jugadors. Amb aquest projecte, estem repassant i millorant el nostre nivell tant en desenvolupament, raonament i comprensió de programació bàsica amb Python. A més a més, estem aprenent com moure'ns per l'entorn de Github.</parrafo>
+        </contingut_programacio>
+    </asignatura>
+    <asignatura>
+        <tituloassignatura_iso>ISO</tituloassignatura_iso>
+        <imagen id="iso_imagen" />
+        <contingut_iso>
+            <informacio_iso>Alumne:Pol  Cruz  |   Curs: 1rASIX  |   Professor: Susana Barbero</informacio_iso>
+            <parrafo>
+Ha ISO hem configurat un servidor Ubuntu Server amb enrutament i els serveis DHCP, DNS i LDAP. Mitjançant un client Ubuntu, també he configurat el LDAP Account Manager. Aquesta tasca ens ha permès aprendre com configurar de manera correcta els serveis esmentats, utilitzant únicament la terminal des d'un Ubuntu Server. Hem après com funciona cada servei, la seva utilitat i les seves funcions en un entorn empresarial.</parrafo>
+        </contingut_iso>
+    </asignatura>
+    <asignatura>
+        <tituloassignatura_ofi>OFI</tituloassignatura_ofi>
+        <imagen id="ofi_imagen" />
+        <contingut_ofi>
+            <informacio_ofi>Alumne:Ruben Gamiz | Curs: 1rSMX  |  Professor: David Bertra</informacio_ofi>
+            <parrafo>
+Una tasca que es va dur a terme a OFI en 1r de SMX va ser la creació d'un document de Google on havíem de posar moltes receptes de cuina. Vam anar modificant el document i actualitzant-lo amb les receptes dels nostres companys per automatitzar capçaleres, índex, estils de text, etc. Bàsicament, vam millorar el nostre nivell en la presentació de documentació i vam aprendre a realitzar tasques monòtones de manera automatitzada, ràpida i eficaç.</parrafo>
+        </contingut_ofi>
+    </asignatura>
+    <asignatura>
+        <tituloassignatura_gbd>GBD</tituloassignatura_gbd>
+        <imagen id="gbd_imagen" />
+        <contingut_gdb>
+            <informacio_gbd>Alumne:Ruben Gamiz | Curs: 1rASIX | Professor: Juan Montedeoca</informacio_gbd>
+            <parrafo>
+En base de dades hem dut a terme moltes tasques relacionades al desenvolupament del model entitat/relacio, el model relacional i unions algebraiques. Amb aquestes tasques hem aprés a realitzar esquemas i ha organitzar correctament com s'estructura la nostra base de dades per a un futur poguer fer la creaciṕ d'aquella amb l'eina mysql.</parrafo>
+        </contingut_gdb>
+    </asignatura>
+    <asignatura>
+        <tituloassignatura_fol>FOL</tituloassignatura_fol>
+        <imagen id="fol_imagen" />
+        <contingut_fol>
+            <informacio_fol>Alumne:Pol Cruz  |  Curs: 1rSMX  |   Professor: Ramon Rodriguez </informacio_fol>
+            <parrafo>
+
+En FOL hem realitzat una observació i recerca dels perills presents al nostre centre d'estudis. Amb aquesta informació, hem analitzat els riscos associats, les normatives que no es compleixen al centre i també els episodis que hi ha ocorregut. Gràcies a aquesta tasca, hem reforçat el nostre coneixement sobre els episodis.            </parrafo>
+        </contingut_fol>
+    </asignatura>
+    <footer id="fotter">
+        <h4 id="texto_fotter">Created by "Bixiang Zhu, Ruben Gamiz and Pol Cruz"</h4>
+        <h4 id="carrer_fotter">Av. d'Eduard Marsistany, 59, 08930 Sant Adrià de Besòs, Barcelona</h4>
+        <h4 id="texto_copyright">Copyright© 2023-2024</h4>
+        <imagen id="logo_fotter"/>
+        <correos>
+            <correos_fotter>
+                <correos_fotter_text >Correus de contacte:</correos_fotter_text>
+                <correo id="polc">· Pol Cruz Fisica: 'pcruz@institutmvm.cat'</correo>
+                <correo id="rubc">· Ruben Gamiz Porcel: 'rgamiz@institutmvm.cat'</correo>
+                <correo id="bixc">· Bixiang Zhu: 'bzhu@institutmvm.cat'</correo>
+            </correos_fotter>
+        </correos>
+    </footer>
+</trabajos>

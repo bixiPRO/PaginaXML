@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE about SYSTEM "DTD/sobre_mi.dtd">
+<?xml-stylesheet type="text/css" href="sobre_mi_css.css"?>
+
+<sobre_mi>
+    <header>
+        <logo id="logo" href="home.html" xmlns="http://www.w3.org/1999/xhtml"/>
+        <enlace id="sobre_mi" href="sobre_mi.xml" xmlns="http://www.w3.org/1999/xhtml">About us</enlace>
+        <enlace id="treball" href="trabajos.xml" xmlns="http://www.w3.org/1999/xhtml">Work</enlace>
+        <enlace id="contacte" href="contacte.html" xmlns="http://www.w3.org/1999/xhtml">Contact us</enlace>
+    </header>
+    <titul_pagina>ABOUT US</titul_pagina>
+    <todo_ruben>
+        <imagen id="ruben_img" />
+        <persona id="ruben">
+            <titol>RUBÉN GAMIZ PORCEL</titol>
+            <text>Sóc una persona apassionada i activa en el món dels ordinadors, amb iniciativa i responsabilitat. Tinc objectius ben clars; em considero una persona bastant cooperativa i responsable amb les meves tasques. M'agrada l'esport i els projectes ambiciosos. Soc gamer i actualment estudiant d'un cicle superior d'Administració de Sistemes i Xarxes. En un futur, vull estar en l'àmbit del desenvolupament de videojocs.</text>
+        </persona>
+        <curriculum id="ruben_curriculum" href="ruben.pdf" xmlns="http://www.w3.org/1999/xhtml">LINK</curriculum>
+    </todo_ruben>
+    <todo_pol>
+        <imagen id="pol_img"/>
+        <persona id="pol">
+            <titol>POL CRUZ FISICA</titol>
+            <text>Em considero una persona responsable i aplicada a la feina també un gran apassionat del món de la informàtica, ja que aquest tema m'ha cridat l'atenció des de ven petit.
+M'agradaria poder trobar un treball que m'agradi referent a aquest àmbit per poder guanyar-me la vida fent el que m'agrada.</text>
+        </persona>
+        <curriculum id="pol_curriculum" href="pol.pdf" xmlns="http://www.w3.org/1999/xhtml" >LINK</curriculum>
+    </todo_pol>
+    <todo_bixi>
+        <imagen id="bixiang_img"/>
+        <persona id="bixiang">
+            <titol>BIXIANG ZHU</titol>
+            <text>Sóc Bixiang Zhu, un apassionat del món de la informàtica. La meva responsabilitat i puntualitat m'han permès destacar en els projectes que he realitzat fins ara. Estic emocionat per continuar explorant en el mon de la informatica.</text>
+        </persona>
+        <curriculum id="bixiang_curriculum" href="bixi.pdf" xmlns="http://www.w3.org/1999/xhtml">LINK</curriculum>
+    </todo_bixi>
+    <footer id="fotter">
+        <h4 id="texto_fotter">Created by "Bixiang Zhu, Ruben Gamiz and Pol Cruz"</h4>
+        <h4 id="carrer_fotter">Av. d'Eduard Marsistany, 59, 08930 Sant Adrià de Besòs, Barcelona</h4>
+        <h4 id="texto_copyright">Copyright© 2023-2024</h4>
+        <imagen id="logo_fotter"/>
+        <correos>
+            <correos_fotter>
+                <correos_fotter_text >Correus de contacte:</correos_fotter_text>
+                <correo id="polc">· Pol Cruz Fisica: 'pcruz@institutmvm.cat'</correo>
+                <correo id="rubc">· Ruben Gamiz Porcel: 'rgamiz@institutmvm.cat'</correo>
+                <correo id="bixc">· Bixiang Zhu: 'bzhu@institutmvm.cat'</correo>
+            </correos_fotter>
+        </correos>
+    </footer>
+</sobre_mi>
